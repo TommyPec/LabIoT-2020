@@ -1,6 +1,5 @@
 sdkconfig
-.vscode
-.build
+.build/*
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
