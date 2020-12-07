@@ -1,5 +1,4 @@
 # Hello World Example
 
-Starts a FreeRTOS task to print "Hello World"
+Branch master per mettere il codice C, potete modificare tranquillamente se qualcosa nella vostra configurazione non torna.
 
-See the README.md file in the upper level 'examples' directory for more information about examples.
