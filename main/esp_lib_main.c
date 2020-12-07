@@ -39,6 +39,7 @@
 #endif
 static void tcp_client_task(void *pvParameters);
 static const char *TAG = "example";
+
 static const char *payload = "Message from ESP32 ";
 static void bmp280_test(void *pvParamters);
 
