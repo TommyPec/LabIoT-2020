@@ -21,26 +21,26 @@
 #include <esp_system.h>
 #include <bmp280.h>
 #include <string.h>
-
+//Attenzione a fare i test potrebbero arrivare dati da test precedenti, la rete si comporta male
 
 #define SDA_GPIO 16
 #define SCL_GPIO 15
 
 
-//Indirizzo del raspberry, che sarà anche l'indirizzo del server TCP
+
 #define HOST_IP_ADDR "192.168.1.169"
 
-//Porta su cui è in ascolto il server TCP
+
 #define PORT 10000
 
 
 #if defined(CONFIG_IDF_TARGET_ESP32S2)
 #define APP_CPU_NUM PRO_CPU_NUM
 #endif
-
+static void tcp_client_task(void *pvParameters);
 static const char *TAG = "example";
 static const char *payload = "Message from ESP32 ";
-
+static void bmp280_test(void *pvParamters);
 
 void bmp280_test(void *pvParamters)
 {
@@ -71,6 +71,9 @@ void bmp280_test(void *pvParamters)
          * example. see sdkconfig.defaults.esp8266
          */
         printf("Pressure: %.2f Pa, Temperature: %.2f C", pressure, temperature);
+        xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, NULL);
+        vTaskDelay(500 / portTICK_PERIOD_MS);
+
         if (bme280p)
             printf(", Humidity: %.2f\n", humidity);
         else
@@ -87,58 +90,43 @@ static void tcp_client_task(void *pvParameters)
     int addr_family;
     int ip_protocol;
 
-    while (1) {
-
-        struct sockaddr_in dest_addr;
-        dest_addr.sin_addr.s_addr = inet_addr(HOST_IP_ADDR);
-        dest_addr.sin_family = AF_INET;
-        dest_addr.sin_port = htons(PORT);
-        addr_family = AF_INET;
-        ip_protocol = IPPROTO_IP;
-        inet_ntoa_r(dest_addr.sin_addr, addr_str, sizeof(addr_str) - 1);
-
-        int sock =  socket(addr_family, SOCK_STREAM, ip_protocol);
-        if (sock < 0) {
-            ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
-            break;
-        }
-        ESP_LOGI(TAG, "Socket created, connecting to %s:%d", HOST_IP_ADDR, PORT);
-
-        int err = connect(sock, (struct sockaddr *)&dest_addr, sizeof(dest_addr));
-        if (err != 0) {
-            ESP_LOGE(TAG, "Socket unable to connect: errno %d", errno);
-            break;
-        }
-        ESP_LOGI(TAG, "Successfully connected");
-
-        while (1) {
-            int err = send(sock, payload, strlen(payload), 0);
-            if (err < 0) {
-                ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
-                break;
-            }
-
-            int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
-            // Error occurred during receiving
-            if (len < 0) {
-                ESP_LOGE(TAG, "recv failed: errno %d", errno);
-                break;
-            }
-            // Data received
-            else {
-                rx_buffer[len] = 0; // Null-terminate whatever we received and treat like a string
-                ESP_LOGI(TAG, "Received %d bytes from %s:", len, addr_str);
-                ESP_LOGI(TAG, "%s", rx_buffer);
-            }
-
-            vTaskDelay(2000 / portTICK_PERIOD_MS);
-        }
-
-        if (sock != -1) {
-            ESP_LOGE(TAG, "Shutting down socket and restarting...");
-            shutdown(sock, 0);
-            close(sock);
-        }
+    struct sockaddr_in dest_addr;
+    dest_addr.sin_addr.s_addr = inet_addr(HOST_IP_ADDR);
+    dest_addr.sin_family = AF_INET;
+    dest_addr.sin_port = htons(PORT);
+    addr_family = AF_INET;
+    ip_protocol = IPPROTO_IP;
+    inet_ntoa_r(dest_addr.sin_addr, addr_str, sizeof(addr_str) - 1);
+    int sock =  socket(addr_family, SOCK_STREAM, ip_protocol);
+    if (sock < 0) {
+        ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
+    }
+    ESP_LOGI(TAG, "Socket created, connecting to %s:%d", HOST_IP_ADDR, PORT);
+    int err = connect(sock, (struct sockaddr *)&dest_addr, sizeof(dest_addr));
+    if (err != 0) {
+        ESP_LOGE(TAG, "Socket unable to connect: errno %d", errno);
+    }
+    ESP_LOGI(TAG, "Successfully connected");
+    err = send(sock, payload, strlen(payload), 0);
+    if (err < 0) {
+            ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
+    }
+    vTaskDelay(100 / portTICK_PERIOD_MS);
+    int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
+    // Error occurred during receiving
+    if (len < 0) {
+        ESP_LOGE(TAG, "recv failed: errno %d", errno);
+    }
+    // Data received
+    else {
+        rx_buffer[len] = 0; // Null-terminate whatever we received and treat like a string
+            ESP_LOGI(TAG, "Received %d bytes from %s:", len, addr_str);
+            ESP_LOGI(TAG, "%s", rx_buffer);
+    }
+    if (sock != -1) {
+        ESP_LOGI(TAG, "Shutting down socket and restarting...");
+        shutdown(sock, 0);
+        close(sock);
     }
     vTaskDelete(NULL);
 }
