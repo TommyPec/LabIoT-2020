@@ -119,6 +119,16 @@ CONFIG_PARTITION_TABLE_MD5=y
 # end of Partition Table
 
 #
+# Example Connection Configuration
+#
+CONFIG_EXAMPLE_CONNECT_WIFI=y
+# CONFIG_EXAMPLE_CONNECT_ETHERNET is not set
+CONFIG_EXAMPLE_WIFI_SSID="TIM-36812413"
+CONFIG_EXAMPLE_WIFI_PASSWORD="tiCtpBBzbAvgaEpM"
+CONFIG_EXAMPLE_CONNECT_IPV6=y
+# end of Example Connection Configuration
+
+#
 # Compiler options
 #
 CONFIG_COMPILER_OPTIMIZATION_DEFAULT=y

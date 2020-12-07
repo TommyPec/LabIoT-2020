@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/DULLA/Develop_UNIFI/esp-idf/components/wifi_provisioning
+# Install script for directory: C:/Users/DULLA/esp-idf/components/wifi_provisioning
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/DULLA/Develop_UNIFI/esp-idf/components/espcoredump
+# Install script for directory: C:/Users/DULLA/esp-idf/components/espcoredump
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

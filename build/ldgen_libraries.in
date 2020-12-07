@@ -103,3 +103,4 @@ $<TARGET_FILE:__idf_tda74xx>
 $<TARGET_FILE:__idf_tsl2561>
 $<TARGET_FILE:__idf_tsl4531>
 $<TARGET_FILE:__idf_ultrasonic>
+$<TARGET_FILE:__idf_protocol_examples_common>

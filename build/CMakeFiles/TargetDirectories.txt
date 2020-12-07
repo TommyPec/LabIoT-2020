@@ -846,3 +846,10 @@ C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/ultrasonic/CMakeFiles/edi
 C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/ultrasonic/CMakeFiles/rebuild_cache.dir
 C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/ultrasonic/CMakeFiles/list_install_components.dir
 C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/ultrasonic/CMakeFiles/install/strip.dir
+C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/protocol_examples_common/CMakeFiles/__idf_protocol_examples_common.dir
+C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/protocol_examples_common/CMakeFiles/install/local.dir
+C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/protocol_examples_common/CMakeFiles/install.dir
+C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/protocol_examples_common/CMakeFiles/edit_cache.dir
+C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/protocol_examples_common/CMakeFiles/rebuild_cache.dir
+C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/protocol_examples_common/CMakeFiles/list_install_components.dir
+C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/protocol_examples_common/CMakeFiles/install/strip.dir

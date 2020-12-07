@@ -35,17 +35,17 @@ warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 Determining if the C compiler works passed with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_97aba"
-[1/2] Building C object CMakeFiles/cmTC_97aba.dir/testCCompiler.c.obj
-[2/2] Linking C executable cmTC_97aba
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_627cd"
+[1/2] Building C object CMakeFiles/cmTC_627cd.dir/testCCompiler.c.obj
+[2/2] Linking C executable cmTC_627cd
 
 
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_b6a22"
-[1/2] Building C object CMakeFiles/cmTC_b6a22.dir/CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_b6a22
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_e5839"
+[1/2] Building C object CMakeFiles/cmTC_e5839.dir/CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_e5839
 Using built-in specs.
 COLLECT_GCC=C:\Users\DULLA\Develop_UNIFI\IDF4.1_roba_scaricata\tools\xtensa-esp32-elf\esp-2020r2-8.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe
 COLLECT_LTO_WRAPPER=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe
@@ -55,18 +55,18 @@ Thread model: posix
 gcc version 8.2.0 (crosstool-NG esp-2020r2) 
 COMPILER_PATH=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/;c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/;c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/;c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/;c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_b6a22'
- c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe -plugin c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\cc858gAI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_b6a22 c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_b6a22.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_b6a22'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_e5839'
+ c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe -plugin c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\ccUynpif.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_e5839 c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_e5839.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_e5839'
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_b6a22"]
-  ignore line: [[1/2] Building C object CMakeFiles/cmTC_b6a22.dir/CMakeCCompilerABI.c.obj]
-  ignore line: [[2/2] Linking C executable cmTC_b6a22]
+  ignore line: [Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_e5839"]
+  ignore line: [[1/2] Building C object CMakeFiles/cmTC_e5839.dir/CMakeCCompilerABI.c.obj]
+  ignore line: [[2/2] Linking C executable cmTC_e5839]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\Users\DULLA\Develop_UNIFI\IDF4.1_roba_scaricata\tools\xtensa-esp32-elf\esp-2020r2-8.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-gcc.exe]
   ignore line: [COLLECT_LTO_WRAPPER=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe]
@@ -80,27 +80,27 @@ Parsed C implicit link information from above output:
   ignore line: [LIBRARY_PATH=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/]
   ignore line: [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/]
   ignore line: [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_b6a22']
-  link line: [ c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe -plugin c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\cc858gAI.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_b6a22 c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_b6a22.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_e5839']
+  link line: [ c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe -plugin c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\ccUynpif.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_e5839 c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_e5839.dir/CMakeCCompilerABI.c.obj -lgcc -lc -lnosys -lc -lgcc c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\cc858gAI.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\ccUynpif.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_b6a22] ==> ignore
+    arg [cmTC_e5839] ==> ignore
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o] ==> ignore
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o] ==> ignore
     arg [-Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0] ==> dir [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0]
     arg [-Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> dir [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc]
     arg [-Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib]
-    arg [CMakeFiles/cmTC_b6a22.dir/CMakeCCompilerABI.c.obj] ==> ignore
+    arg [CMakeFiles/cmTC_e5839.dir/CMakeCCompilerABI.c.obj] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [-lc] ==> lib [c]
     arg [-lnosys] ==> lib [nosys]
@@ -121,9 +121,9 @@ Parsed C implicit link information from above output:
 Detecting C [-std=c11] compiler features compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_d4e05"
-[1/2] Building C object CMakeFiles/cmTC_d4e05.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_d4e05
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_6c914"
+[1/2] Building C object CMakeFiles/cmTC_6c914.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_6c914
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -135,9 +135,9 @@ Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninj
 Detecting C [-std=c99] compiler features compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_c33c5"
-[1/2] Building C object CMakeFiles/cmTC_c33c5.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_c33c5
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_1aee1"
+[1/2] Building C object CMakeFiles/cmTC_1aee1.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_1aee1
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -149,9 +149,9 @@ Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninj
 Detecting C [-std=c90] compiler features compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_45fda"
-[1/2] Building C object CMakeFiles/cmTC_45fda.dir/feature_tests.c.obj
-[2/2] Linking C executable cmTC_45fda
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_a04e7"
+[1/2] Building C object CMakeFiles/cmTC_a04e7.dir/feature_tests.c.obj
+[2/2] Linking C executable cmTC_a04e7
 
 
     Feature record: C_FEATURE:1c_function_prototypes
@@ -161,17 +161,17 @@ Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninj
 Determining if the CXX compiler works passed with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_532e3"
-[1/2] Building CXX object CMakeFiles/cmTC_532e3.dir/testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_532e3
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_90d6b"
+[1/2] Building CXX object CMakeFiles/cmTC_90d6b.dir/testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_90d6b
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_d988d"
-[1/2] Building CXX object CMakeFiles/cmTC_d988d.dir/CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_d988d
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_f7cb2"
+[1/2] Building CXX object CMakeFiles/cmTC_f7cb2.dir/CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_f7cb2
 Using built-in specs.
 COLLECT_GCC=C:\Users\DULLA\Develop_UNIFI\IDF4.1_roba_scaricata\tools\xtensa-esp32-elf\esp-2020r2-8.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe
 COLLECT_LTO_WRAPPER=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe
@@ -181,18 +181,18 @@ Thread model: posix
 gcc version 8.2.0 (crosstool-NG esp-2020r2) 
 COMPILER_PATH=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/;c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/;c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/bin/
 LIBRARY_PATH=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/;c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/;c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_d988d'
- c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe -plugin c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\ccoHL1J8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_d988d c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_d988d.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
-COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_d988d'
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_f7cb2'
+ c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe -plugin c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\ccF0Lw1Z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_f7cb2 c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_f7cb2.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o
+COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_f7cb2'
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(xtensa-esp32-elf-ld\.exe|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_d988d"]
-  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_d988d.dir/CMakeCXXCompilerABI.cpp.obj]
-  ignore line: [[2/2] Linking CXX executable cmTC_d988d]
+  ignore line: [Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_f7cb2"]
+  ignore line: [[1/2] Building CXX object CMakeFiles/cmTC_f7cb2.dir/CMakeCXXCompilerABI.cpp.obj]
+  ignore line: [[2/2] Linking CXX executable cmTC_f7cb2]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=C:\Users\DULLA\Develop_UNIFI\IDF4.1_roba_scaricata\tools\xtensa-esp32-elf\esp-2020r2-8.2.0\xtensa-esp32-elf\bin\xtensa-esp32-elf-g++.exe]
   ignore line: [COLLECT_LTO_WRAPPER=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe]
@@ -206,27 +206,27 @@ Parsed CXX implicit link information from above output:
   ignore line: [LIBRARY_PATH=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/]
   ignore line: [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/]
   ignore line: [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_d988d']
-  link line: [ c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe -plugin c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\ccoHL1J8.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_d988d c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_d988d.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
+  ignore line: [COLLECT_GCC_OPTIONS='-mlongcalls' '-Wno-frame-address' '-v' '-o' 'cmTC_f7cb2']
+  link line: [ c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe -plugin c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll -plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe -plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\ccF0Lw1Z.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lnosys -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -o cmTC_f7cb2 c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0 -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc -Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib CMakeFiles/cmTC_f7cb2.dir/CMakeCXXCompilerABI.cpp.obj -lstdc++ -lm -lgcc -lc -lnosys -lc -lgcc c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtend.o c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtn.o]
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/collect2.exe] ==> ignore
     arg [-plugin] ==> ignore
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/liblto_plugin-0.dll] ==> ignore
     arg [-plugin-opt=c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../libexec/gcc/xtensa-esp32-elf/8.2.0/lto-wrapper.exe] ==> ignore
-    arg [-plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\ccoHL1J8.res] ==> ignore
+    arg [-plugin-opt=-fresolution=C:\Users\DULLA\AppData\Local\Temp\ccF0Lw1Z.res] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lnosys] ==> ignore
     arg [-plugin-opt=-pass-through=-lc] ==> ignore
     arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_d988d] ==> ignore
+    arg [cmTC_f7cb2] ==> ignore
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib/crt0.o] ==> ignore
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crti.o] ==> ignore
     arg [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/crtbegin.o] ==> ignore
     arg [-Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0] ==> dir [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0]
     arg [-Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc] ==> dir [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc]
     arg [-Lc:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib] ==> dir [c:/users/dulla/develop_unifi/idf4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/bin/../lib/gcc/xtensa-esp32-elf/8.2.0/../../../../xtensa-esp32-elf/lib]
-    arg [CMakeFiles/cmTC_d988d.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
+    arg [CMakeFiles/cmTC_f7cb2.dir/CMakeCXXCompilerABI.cpp.obj] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc] ==> lib [gcc]
@@ -249,9 +249,9 @@ Parsed CXX implicit link information from above output:
 Detecting CXX [-std=c++2a] compiler features compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_7e81d"
-[1/2] Building CXX object CMakeFiles/cmTC_7e81d.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_7e81d
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_567c5"
+[1/2] Building CXX object CMakeFiles/cmTC_567c5.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_567c5
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -316,9 +316,9 @@ Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninj
 Detecting CXX [-std=c++17] compiler features compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_118cb"
-[1/2] Building CXX object CMakeFiles/cmTC_118cb.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_118cb
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_44c4c"
+[1/2] Building CXX object CMakeFiles/cmTC_44c4c.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_44c4c
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -383,9 +383,9 @@ Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninj
 Detecting CXX [-std=c++14] compiler features compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_ee1a3"
-[1/2] Building CXX object CMakeFiles/cmTC_ee1a3.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_ee1a3
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_ae2b8"
+[1/2] Building CXX object CMakeFiles/cmTC_ae2b8.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_ae2b8
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
@@ -450,9 +450,9 @@ Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninj
 Detecting CXX [-std=c++11] compiler features compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_99b56"
-[1/2] Building CXX object CMakeFiles/cmTC_99b56.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_99b56
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_fe42c"
+[1/2] Building CXX object CMakeFiles/cmTC_fe42c.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_fe42c
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers
@@ -517,9 +517,9 @@ Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninj
 Detecting CXX [-std=c++98] compiler features compiled with the following output:
 Change Dir: C:/Users/DULLA/Develop_UNIFI/hello_world/build/bootloader/CMakeFiles/CMakeTmp
 
-Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_d3d4c"
-[1/2] Building CXX object CMakeFiles/cmTC_d3d4c.dir/feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_d3d4c
+Run Build Command:"C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/ninja/1.9.0/ninja.exe" "cmTC_83ad5"
+[1/2] Building CXX object CMakeFiles/cmTC_83ad5.dir/feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_83ad5
 
 
     Feature record: CXX_FEATURE:0cxx_aggregate_default_initializers

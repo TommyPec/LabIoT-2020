@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/DULLA/Develop_UNIFI/esp-idf
+# Install script for directory: C:/Users/DULLA/esp-idf
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -148,6 +148,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/tsl2561/cmake_install.cmake")
   include("C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/tsl4531/cmake_install.cmake")
   include("C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/ultrasonic/cmake_install.cmake")
+  include("C:/Users/DULLA/Develop_UNIFI/hello_world/build/esp-idf/protocol_examples_common/cmake_install.cmake")
 
 endif()
 

@@ -8,7 +8,8 @@
                 "${config:idf.espIdfPath}/components/**",
                 "${config:idf.espIdfPathWin}/components/**",
                 "${workspaceFolder}/**",
-                "C:\\Users\\DULLA\\Develop_UNIFI\\esp-idf\\components\\**"
+                "C:\\Users\\DULLA\\Develop_UNIFI\\esp-idf\\components\\**",
+                "C:/Users/DULLA/Develop_UNIFI/IDF4.1_roba_scaricata/tools/xtensa-esp32-elf/esp-2020r2-8.2.0/xtensa-esp32-elf/xtensa-esp32-elf/include"
             ],
             "browse": {
                 "path": [
