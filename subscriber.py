@@ -29,7 +29,7 @@ def new_client()
     client.on_message = on_message
 topics=[("house/light/bulb1",0),("house/light/bulb2",1)]
 topic_ack=[]
-pint("Connecting to broker ", broker)
+print("Connecting to broker ", broker)
 try:
     client.connect(broker)          #connect to broker
 except:
