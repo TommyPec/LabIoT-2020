@@ -10,6 +10,7 @@
 #include "nvs_flash.h"
 #include "esp_netif.h"
 #include "protocol_examples_common.h"
+#include <pthread.h>
 
 #include "lwip/err.h"
 #include "lwip/sockets.h"
@@ -22,7 +23,8 @@
 #include <bmp280.h>
 #include <string.h>
 //Attenzione a fare i test potrebbero arrivare dati da test precedenti, la rete si comporta male
-
+//No debug bisogna stampare, il topic non viene creato, in chiusura non è gestito
+//Comportamento strano al broker, connection reset by peer
 #define SDA_GPIO 16
 #define SCL_GPIO 15
 
@@ -39,8 +41,8 @@
 #endif
 static void tcp_client_task(void *pvParameters);
 static const char *TAG = "example";
-
-static const char *payload = "Message from ESP32 ";
+pthread_mutex_t payload_mutex;
+ char payload[256] = "";
 static void bmp280_test(void *pvParamters);
 
 void bmp280_test(void *pvParamters)
@@ -57,7 +59,7 @@ void bmp280_test(void *pvParamters)
     printf("BMP280: found %s\n", bme280p ? "BME280" : "BMP280");
 
     float pressure, temperature, humidity;
-
+    
     while (1)
     {
         vTaskDelay(500 / portTICK_PERIOD_MS);
@@ -72,6 +74,11 @@ void bmp280_test(void *pvParamters)
          * example. see sdkconfig.defaults.esp8266
          */
         printf("Pressure: %.2f Pa, Temperature: %.2f C", pressure, temperature);
+        
+        pthread_mutex_lock(&payload_mutex);
+   	    sprintf(payload,"Pr: %.2f Pa, Te: %.2f C", pressure, temperature);
+        pthread_mutex_unlock(&payload_mutex);
+        
         xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, NULL);
         vTaskDelay(500 / portTICK_PERIOD_MS);
 
@@ -108,7 +115,11 @@ static void tcp_client_task(void *pvParameters)
         ESP_LOGE(TAG, "Socket unable to connect: errno %d", errno);
     }
     ESP_LOGI(TAG, "Successfully connected");
+    
+    pthread_mutex_lock(&payload_mutex);
     err = send(sock, payload, strlen(payload), 0);
+    pthread_mutex_unlock(&payload_mutex);
+
     if (err < 0) {
             ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
     }
