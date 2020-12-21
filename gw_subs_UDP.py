@@ -85,7 +85,7 @@ def initialize(gateway):
         print(f"Qualcosa è andato storto...\n{err}.\n")
         print("Sto tentando di reinizializzare il Server UDP...\n")
         initialize(gateway)
-    # Publisher MQTT
+    # Client MQTT
     pubsub = mqtt.Client(client_id = "", clean_session = True, userdata = None)
     pubsub.on_connect = on_connect
     pubsub.on_disconnect = on_disconnect
