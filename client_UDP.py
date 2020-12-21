@@ -1,11 +1,14 @@
 ########## Importazione moduli ##########
+import configparser
 import socket
 import sys
 
 
 ########## Parametri ##########
-port = 20000
-addr_server = "192.168.1.57" # Cambiare con l'indirizzo IPv4 del proprio gateway (RB/PC)
+config = configparser.ConfigParser()
+config.read('config.ini')
+port = config['RASPBERRY']['port']
+addr_server = config['RASPBERRY']['address'] # Cambiare con l'indirizzo IPv4 del proprio gateway (RB/PC)
 server = (addr_server, port)
 
 
