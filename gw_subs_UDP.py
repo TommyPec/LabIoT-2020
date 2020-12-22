@@ -101,7 +101,7 @@ def initialize(gateway):
         raise SystemError(f"Errore in creazione socket:\n{err}\n")
     try:
         s.bind(gateway)
-    except socket.error as e:
+    except socket.error as err:
         try:
             s.close()
         except Exception:
