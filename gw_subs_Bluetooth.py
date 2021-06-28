@@ -94,7 +94,7 @@ def client2queue(s, q):
         except Exception:
             pass
         raise SystemError(f"Errore in listen socket Bluetooth RFCOMM:\n{err}\n")
-    print("Server Bluetooth RFCOMM in attesa del Client target {addr_target}.\n")
+    print(f"Server Bluetooth RFCOMM in attesa del Client target {addr_target}.\n")
     # Ricerca del Client target e connessione
     while True:
         try:
