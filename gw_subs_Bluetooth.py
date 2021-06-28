@@ -109,7 +109,7 @@ def client2queue(s, q):
             break;
         else
             s_client.close()
-    print("Server Bluetooth RFCOMM connesso al Client target {addr_target}.\n")
+    print(f"Server Bluetooth RFCOMM connesso al Client target {addr_target}.\n")
     # Ricezione da Client target
     while True:
         msg = s_client.recv(4096)
