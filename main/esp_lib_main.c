@@ -28,7 +28,7 @@
 #define SDA_GPIO 16
 #define SCL_GPIO 15
 
-
+//Nuova versione
 
 #define HOST_IP_ADDR "192.168.2.2"
 
