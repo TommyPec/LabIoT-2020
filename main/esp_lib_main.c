@@ -30,11 +30,11 @@
 
 
 
-#define HOST_IP_ADDR "192.168.1.169"
+#define HOST_IP_ADDR "192.168.2.2"
 
 
 #define PORT 10000
-
+//Cambio questa riga altrimenti non  funziona nulla
 
 #if defined(CONFIG_IDF_TARGET_ESP32S2)
 #define APP_CPU_NUM PRO_CPU_NUM
@@ -62,7 +62,7 @@ void bmp280_test(void *pvParamters)
     
     while (1)
     {
-        vTaskDelay(500 / portTICK_PERIOD_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
         if (bmp280_read_float(&dev, &temperature, &pressure, &humidity) != ESP_OK)
         {
             printf("Temperature/pressure reading failed\n");
@@ -76,11 +76,11 @@ void bmp280_test(void *pvParamters)
         printf("Pressure: %.2f Pa, Temperature: %.2f C", pressure, temperature);
         
         pthread_mutex_lock(&payload_mutex);
-   	    sprintf(payload,"Pr: %.2f Pa, Te: %.2f C", pressure, temperature);
+   	    sprintf(payload,"Pr: %.2f Pa, Te: %.2f C", pressure, temperature); //Introduci codifica
         pthread_mutex_unlock(&payload_mutex);
         
         xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, NULL);
-        vTaskDelay(500 / portTICK_PERIOD_MS);
+        vTaskDelay(1000 / portTICK_PERIOD_MS);
 
         if (bme280p)
             printf(", Humidity: %.2f\n", humidity);
@@ -105,16 +105,24 @@ static void tcp_client_task(void *pvParameters)
     addr_family = AF_INET;
     ip_protocol = IPPROTO_IP;
     inet_ntoa_r(dest_addr.sin_addr, addr_str, sizeof(addr_str) - 1);
-    int sock =  socket(addr_family, SOCK_STREAM, ip_protocol);
+    int sock =  socket(addr_family, SOCK_DGRAM, ip_protocol);
     if (sock < 0) {
         ESP_LOGE(TAG, "Unable to create socket: errno %d", errno);
     }
-    ESP_LOGI(TAG, "Socket created, connecting to %s:%d", HOST_IP_ADDR, PORT);
+    ESP_LOGI(TAG, "Socket created, sending to %s:%d", HOST_IP_ADDR, PORT);
     int err = connect(sock, (struct sockaddr *)&dest_addr, sizeof(dest_addr));
     if (err != 0) {
         ESP_LOGE(TAG, "Socket unable to connect: errno %d", errno);
+        shutdown(sock, 0);
+        close(sock);
+        int sock =  socket(addr_family, SOCK_DGRAM, ip_protocol);
+        int err = connect(sock, (struct sockaddr *)&dest_addr, sizeof(dest_addr));
+        if (err != 0) {
+            ESP_LOGE(TAG, "Second time unable to connect, giving up: errno %d", errno);
+            esp_restart();
+            }
     }
-    ESP_LOGI(TAG, "Successfully connected");
+    ESP_LOGI(TAG, "Successfully created socket, sending payload");
     
     pthread_mutex_lock(&payload_mutex);
     err = send(sock, payload, strlen(payload), 0);
@@ -123,7 +131,7 @@ static void tcp_client_task(void *pvParameters)
     if (err < 0) {
             ESP_LOGE(TAG, "Error occurred during sending: errno %d", errno);
     }
-    vTaskDelay(100 / portTICK_PERIOD_MS);
+    vTaskDelay(500 / portTICK_PERIOD_MS);
     int len = recv(sock, rx_buffer, sizeof(rx_buffer) - 1, 0);
     // Error occurred during receiving
     if (len < 0) {
@@ -136,7 +144,7 @@ static void tcp_client_task(void *pvParameters)
             ESP_LOGI(TAG, "%s", rx_buffer);
     }
     if (sock != -1) {
-        ESP_LOGI(TAG, "Shutting down socket and restarting...");
+        ESP_LOGI(TAG, "Shutting down socket and restarting measurement task...");
         shutdown(sock, 0);
         close(sock);
     }
@@ -160,7 +168,7 @@ void app_main()
     fflush(stdout);
 
     xTaskCreate(tcp_client_task, "tcp_client", 4096, NULL, 5, NULL);
-    vTaskDelay(10000 / portTICK_PERIOD_MS);
-    esp_restart();
+    // vTaskDelay(10000 / portTICK_PERIOD_MS);
+    // esp_restart();
 }
 
